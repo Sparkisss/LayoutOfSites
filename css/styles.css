@@ -296,10 +296,19 @@ h1,h2,h3,h4,h5,h6,p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 25px;
 }
 .information__list .information__list-item {
   width: 25%;
+  margin: 5px 0;
 }
 .information__list .information__list-item h3{
   color: #000;
+  font-weight: 700;
+}
+.information__list .information__list-item:first-child h3 {
+  background: url('../images/icons/phone.svg') no-repeat 0 center/contain;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 40px;
 }
