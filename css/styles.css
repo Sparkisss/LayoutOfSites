@@ -119,6 +119,7 @@ h1,h2,h3,h4,h5,h6,p {
   justify-content: space-between;
   padding-top: 20px;
   align-items: center;
+  position: relative;
 }
 
 .section .header .search form {
@@ -350,11 +351,19 @@ h1,h2,h3,h4,h5,h6,p {
   padding: 0 30px;
 }
 .app__list .app__list-item .item__content h3 {
+  font-weight: 700;
+  color: #000;
+  font-size: 22px;
+  /* line-height: 24px; */
+  margin: 25px 0;
+}
+.app__list .app__list-item .item__content p {
   font-weight: 500;
   color: #000;
   line-height: 24px;
   margin: 25px 0;
 }
+
 .button__red {
   background-color: #E82934;
   color: #fff;
@@ -407,6 +416,7 @@ h1,h2,h3,h4,h5,h6,p {
   margin-bottom: 40px;
   width: 885px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .menus ul {
   width: 28%;
@@ -436,4 +446,35 @@ h1,h2,h3,h4,h5,h6,p {
   font-size: 13px;
   font-weight: 500;
   color: #c8c8c8;
+}
+
+.header__block-hamburger {
+  width: 45px;
+  height: 30px;
+  display: none;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+.header__block-hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.header__block-hamburger span::before,
+.header__block-hamburger span::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+}
+.header__block-hamburger span::after {
+  top: 12px;
 }
